@@ -1,0 +1,53 @@
+{
+  version : 0.1,
+  stations:[
+    {
+      id:1,
+      namestations: "Abesses",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:2,
+      namestations: "Adrienne Bolland",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:3,
+      namestations:"Aéroport d'orly",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:4,
+      namestations:"Alcide d'orbigny",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:5,
+      namestations:"Alésia",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:6,
+      namestations:"Alexandre Dumas",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:7,
+      namestations:"Alma-Marceau",
+      lat: 48.884476,
+      lon: 2.3384377 
+    },
+    {
+      id:8,
+      namestations:"Anvers",
+      lat: 48.884476,
+      lon: 2.3384377 
+    }
+  ]
+}

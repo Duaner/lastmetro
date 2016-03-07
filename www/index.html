@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+        
+        <link rel="stylesheet" type="text/css" href="dist/main.min.css" />
+        <title>LASTMETRO</title>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+    </head>
+    <body>
+
+        <div id="app">
+            <div id="test_vue_alarm">
+                <div id="alarm_view">
+                    <div id="alarm_scroller">
+                        <div id="container_alarm">
+                            <div class="info_alarm l3b active" alt="l3b" data-tour="#img_tour_swipe">
+                                <img src="assets/img/pin_test.png" class="pin_geoloc">
+                                <h3>L'application vous géolocalise dès son ouverture</h3>
+                            </div>
+
+                            <div class="info_alarm l6" alt="l6" data-tour="#img_tour_choose">
+                                <h3>Swiper vers le bas pour choisir votre destination</h3>
+                            </div>
+                            <div class="info_alarm l13" alt="l13">
+                                <h3>L'application calcule votre itinéraire</h3>
+                            </div>
+                            <div class="info_alarm lA" alt="lA">
+                                 <h3>LastMetro vous averti quand vous devez partir</h3>
+                            </div>
+                        </div>
+                        <div id="tour">
+                            <img src="assets/img/phone_tour.png" id="img_tour_phone">
+                            <img src="assets/img/tour_choose_station.png" id="img_tour_choose"><img src="assets/img/swipe_down.png" id="img_tour_swipe">
+                        </div>
+                        
+
+                        <div id="nav">
+                            <ul id="indicator">
+                                <div id="dotty"></div>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <header id="swipe_to_new">
+                        <img src="assets/img/arrow-top.svg" height="10" alt="">
+                        <div id="pullDownLabel"><span>Tirer vers le bas pour </span>Créer une nouvelle alarme</div>
+                    </header>
+
+                    <div id="info_load">
+                        <div class="geo-loader">
+                            <div class="pin">
+                                <div class="circle"></div>
+                                <div class="triangle"></div>
+                            </div>
+
+                            <div class="circles">
+                                <div class="circle" id="wave_1"></div>
+                            </div>
+                        </div>
+
+                        <p class="label_load" id="geoloc_incoming">Geolocalisation en cours</p>
+                        <p class="label_load" id="data_incoming">
+                            Récupération des données 
+
+                            <span id="data-error-1">On galère un peu des fois</span>
+                            <span id="data-error-2">On galère un peu des fois</span>
+                        </p>
+
+                        <p class="label_load" id="alarm_incoming">Création de l'alarme</p>
+                    </div>
+                </div>
+            </div>
+            <div id="list_view">
+                <div class="container">
+                    <header id="stations_header">
+                        <h1>Station d'arrivée</h1>
+                    </header>
+                    <div id="list_stations_wrapper">
+                    <div id="list_stations">
+                        <ul>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="dist/libraries.min.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+    </body>
+</html>
